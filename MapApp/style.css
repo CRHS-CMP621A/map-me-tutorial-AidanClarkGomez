@@ -221,3 +221,40 @@ a:visited {
 .cycling-popup .leaflet-popup-content-wrapper {
   border-left: 5px solid var(--color-brand--1);
 }
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-family: 'Manrope', sans-serif;
+    color: var(--color-light--2);
+    font-weight: 400;
+    line-height: 1.6;
+    height: 100vh;
+    overscroll-behavior-y: none;
+  
+    background-color: #fff;
+    padding: 2.5rem;
+  
+    display: grid;
+  }
+
+  .sidebar {
+    height: 50rem;
+    order: 2;
+    flex-basis: 10rem;
+    background-color: var(--color-brand--1);
+    padding: 3rem 5rem 4rem 5rem;
+    display: grid;
+  }
+
+  #map {
+    flex: 1;
+    height: 150%;
+    background-color: var(--color-light--1);
+    padding-bottom: 200px;
+  }
+  .workouts {
+    height: 10vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
